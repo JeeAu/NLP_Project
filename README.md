@@ -1,21 +1,22 @@
 # Understanding Customer Sentiment Through Natural Language Processing  
- 
-My project focused on building a robust pipeline to extract actionable insights from large-scale Amazon Office Products reviews by combining **exploratory data analysis (EDA)**, **topic modelling**, and **sentiment classification**.
 
+The project focused on building a robust pipeline to extract actionable insights from large-scale Amazon Office Products reviews by combining **exploratory data analysis (EDA)**, **topic modelling**, and **sentiment classification**.
 
-
+---
 
 ## Project Overview  
 
 Online reviews have exploded in recent years and are now critical to both customers and companies. However, the informal, noisy, and context-dependent nature of these reviews makes large-scale analysis challenging.  
 
-The project built an **end-to-end NLP pipeline** that:
+I built an **end-to-end NLP pipeline** that:
 
 - Cleans and pre-processes raw customer reviews  
 - Discovers hidden themes/topics in the data  
 - Classifies sentiments (positive/neutral/negative) at scale  
 
-This pipeline is intended to help product teams understand customer pain points, discover unmet needs, and improve product design especially for eco-friendly items.
+This pipeline is intended to help product teams understand customer pain points, discover unmet needs, and improve product design—especially for eco-friendly items.
+
+---
 
 ## Methodology  
 
@@ -50,7 +51,7 @@ Identified **32 topics**, e.g. *“pen & ink”*, *“printer performance”*, e
 
 ### 6. Sentiment Classification  
 
-- Balanced dataset by upsampling minority classes and downsampling majority class  
+- Balanced the dataset by upsampling minority classes and downsampling the majority class  
 - Generated multiple feature sets:
   - Sentence embeddings  
   - TF-IDF + LSA  
@@ -62,6 +63,8 @@ Identified **32 topics**, e.g. *“pen & ink”*, *“printer performance”*, e
   - Random Forest  
   - XGBoost  
   - **Stacked Ensemble (best performer)**  
+
+---
 
 ## Key Results  
 
@@ -77,20 +80,24 @@ Identified **32 topics**, e.g. *“pen & ink”*, *“printer performance”*, e
 - The tuned **Stacked Ensemble** outperformed all other classifiers  
 - EDA revealed clear shifts in review trends and ratings over time  
 
+---
+
 ## Impact  
 
-This project shows how **aspect-based sentiment analysis** can give product teams a clear map of strengths, weaknesses, and unmet needs hidden inside unstructured text. It provides a foundation for:
+This project shows how **aspect-based sentiment analysis** can give product teams a clear map of strengths, weaknesses, and unmet needs hidden inside unstructured text. It also provides a foundation for:
 
 - Fine-tuning transformer models (BERT, RoBERTa) on labelled review data  
 - Extending to multilingual or real-time streaming reviews  
 - Handling mixed-sentiment reviews more precisely  
 - Deploying lightweight models for large-scale processing  
 
-
+---
 
 ## Resources  
--  **Code (Google Colab):** [Colab Notebook](https://colab.research.google.com/drive/1q5Up0VLwI6aipPoPg0dlxCeS8iCgwksk?usp=sharing)  
+ 
+- **Code (Google Colab):** [Colab Notebook](https://colab.research.google.com/drive/1q5Up0VLwI6aipPoPg0dlxCeS8iCgwksk?usp=sharing)  
 
+---
 
 ## Technologies Used  
 
@@ -103,6 +110,7 @@ This project shows how **aspect-based sentiment analysis** can give product team
 - **Pandas / NumPy / Matplotlib** (EDA and visualization)  
 - **Swifter** (parallel processing)  
 
+---
 
 ## Future Work  
 
@@ -111,5 +119,6 @@ This project shows how **aspect-based sentiment analysis** can give product team
 - Introduce multi-aspect scoring for mixed reviews  
 - Deploy lightweight models for large-scale, on-device inference  
 
+---
 
 ### If you find this project useful, feel free to fork it or star it on GitHub!
